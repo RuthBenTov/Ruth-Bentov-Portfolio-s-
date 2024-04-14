@@ -1,0 +1,93 @@
+@import "../../assets/colors.scss";
+.homePage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+  }
+  .bgDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -4;
+    background-color: #ffffffa9;
+  }
+  .header {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.8rem;
+    text-align: left;
+    color: $blackClassic;
+    .miniText {
+      font-size: 1.6rem;
+    }
+
+    .red {
+      color: $red;
+    }
+  }
+  .bold {
+    font-weight: bold;
+    font-weight: "600";
+  }
+  .description {
+    text-align: left;
+    width: 582px;
+    height: 92px;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 17px;
+    color: #000000;
+    margin: 20px 0;
+    line-height: 20px;
+  }
+
+  .hireMeBtn,
+  .projectsBtn {
+    // background-color: #000000;
+    border-radius: 77px;
+    padding: 10px 34px;
+    margin: 30px 15px;
+  }
+  .hireMeBtn {
+    background-color: $red;
+    color: $whiteClassic;
+    &:hover {
+      border: 1px solid $whiteClassic;
+    }
+  }
+  .projectsBtn {
+    color: $red;
+    &:hover {
+      border: 1px solid $red;
+    }
+  }
+  .goDown {
+    width: 50px;
+    transform: rotate(90deg);
+    display: block;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .goDownDiv {
+    position: absolute;
+    padding-top: 5rem;
+    left: calc(50% - 25px);
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+  }
+}

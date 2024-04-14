@@ -1,0 +1,59 @@
+@import "../../assets/colors.scss";
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  border-right: 6px solid $red;
+  .navbarContent {
+    padding: 1rem;
+    width: 140px;
+  }
+  .navProfileImg {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  ul {
+    list-style: none;
+    text-align: right;
+    float: right;
+    height: 50vh;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    li {
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      padding-right: 0px;
+      &:hover {
+        animation: moveRight 0.2s ease;
+        padding-right: 30px;
+        cursor: pointer;
+      }
+    }
+    .isActive {
+      font-weight: 600;
+      padding-right: 30px;
+    }
+  }
+  svg {
+    font-size:  2rem;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

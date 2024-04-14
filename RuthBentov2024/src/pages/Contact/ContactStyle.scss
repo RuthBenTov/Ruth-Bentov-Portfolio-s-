@@ -1,0 +1,123 @@
+@import "../../RuthBentov2024/src/assets/colors.scss";
+
+.contactPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+
+  .redComp {
+    background-color: $red;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    * {
+      padding: 1rem 0;
+    }
+    .logo {
+      width: 260px;
+      position: static;
+    }
+    h1 {
+      color: $whiteClassic;
+      font-family: "Inter", sans-serif;
+      font-weight: 100;
+    }
+    p {
+      color: $blackClassic;
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      width: 700px;
+      font-size: 1.3rem;
+      max-width: 60%;
+    }
+    .emailBtn {
+      background-color: $lightGray2;
+      padding: 30px;
+      border-radius: 100px;
+      margin: 40px;
+      img {
+        width: 40px;
+        padding: 0;
+      }
+    }
+  }
+  .blackComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    background-color: $black-superDarkGray;
+    color: $whiteClassic;
+  }
+  .arrowUp {
+    background-color: $lightGray1;
+    position: absolute;
+    right: 20px;
+    bottom: 120px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    svg {
+      position: relative;
+      font-size: 2rem;
+    }
+    &:hover {
+      background-color: $black-superDarkGray;
+      cursor: pointer;
+      svg {
+        color: $lightGray1;
+        animation: rotate 0.3s ease infinite;
+      }
+    }
+    &:active {
+      svg {
+        animation: flyUp 0.8s ease;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg) translateX(-2px);
+  }
+  60% {
+    transform: rotate(0deg) translateY(-2px);
+  }
+  70% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes flyUp {
+  0%,
+  100% {
+    top: 20px;
+  }
+  65% {
+    top: -50px;
+  }
+  75% {
+    top: -200px;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../assets/colors.scss";
+
+.aboutDiv {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  background-color: $lightGray3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .header {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+  }
+
+  .profileImg {
+    width: 250px;
+    max-width: 30vh;
+    border-radius: 100px;
+  }
+  .description {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    padding: 1rem;
+    line-height: 30px;
+    width: 700px;
+
+    .redBold {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
