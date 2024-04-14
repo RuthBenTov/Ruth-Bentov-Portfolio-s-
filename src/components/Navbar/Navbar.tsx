@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const handleScroll = (e: any) => {
+    const handleScroll = () => {
       const stopScrollObjects = document.getElementsByClassName("page");
       const scrollPosition = window.scrollY;
       
