@@ -5,7 +5,7 @@ import "./projectsPageStyle.scss";
 const Projects = () => {
   const [chosenCategory, setChosenCategory] = useState("all");
   return (
-    <div id="projectsPageId" className="projectsPage">
+    <div id="projectsPageId" className="projectsPage page">
       <h1 className="header">Projects</h1>
       <div className="projectsCat">
         <div
@@ -23,6 +23,14 @@ const Projects = () => {
           className={`category ${chosenCategory === "vanilla" && "isActive"}`}
         >
           Vanilla
+        </div>
+        <div
+          onClick={() => {
+            setChosenCategory("react");
+          }}
+          className={`category ${chosenCategory === "react" && "isActive"}`}
+        >
+          React
         </div>
         <div
           onClick={() => {

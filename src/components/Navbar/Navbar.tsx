@@ -18,6 +18,37 @@ const Navbar = () => {
       setCurrentPage(idElem);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = (e: any) => {
+      const stopScrollObjects = document.getElementsByClassName("page");
+      const scrollPosition = window.scrollY;
+      
+      if (stopScrollObjects) {
+        for (let i = 0; i < stopScrollObjects.length; i++){
+          let objectPosition =
+            stopScrollObjects[i].getBoundingClientRect().top + window.scrollY;
+  
+          if (scrollPosition >= objectPosition) {
+            switch (i) {
+              case 0: setCurrentPage("homePageId"); break;
+              case 1: setCurrentPage("aboutPageId"); break;
+              case 2: setCurrentPage("skillsPageId"); break;
+              case 3: setCurrentPage("projectsPageId"); break;
+            }
+          }
+
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <div className="navbar">
       <div className="navbarContent">

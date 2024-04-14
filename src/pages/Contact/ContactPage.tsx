@@ -9,7 +9,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div id="contactPageId" className="contactPage">
+    <div id="contactPageId" className="contactPage page">
       <div className="redComp">
         <img className="logo" src="/images/logo2.png" alt="" />
         <h1>GET IN TOUCH!</h1>

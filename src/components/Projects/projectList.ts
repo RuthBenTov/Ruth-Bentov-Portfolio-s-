@@ -10,7 +10,7 @@ export const projectsList = [
   },
   {
     ImageUrl: "/images/IDEA_Img.png",
-    name: "SIPS",
+    name: "IDEA",
     description:
       "A demo site that aims to help startups develop and advance, by raising funds in exchange for symbolic donations.",
     tags: ["Front&back", "React", "Redux", "MongoDB"],

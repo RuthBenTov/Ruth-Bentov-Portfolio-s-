@@ -1,21 +1,31 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "./AboutStyle.scss";
 
 const About = () => {
+  
+  const stopScrollRef = useRef(null);
+
+  const handleScroll = (event:any) => {
+    // if (event.target === stopScrollRef.current) {
+      alert("Scroll")
+      event.preventDefault();
+    // }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
   return (
-    <div id="aboutPageId" className="aboutDiv">
+    <div  onScroll={handleScroll} id="aboutPageId" className="aboutDiv page">
       <h1 className="header">A LITLLE ABOUT ME</h1>
       <img
         data-aos="zoom-out"
         className="profileImg"
-        src="../../../public/images/b25e597b-57e8-47b5-a1ff-053daf1bfdfc.png"
+        src="/images/b25e597b-57e8-47b5-a1ff-053daf1bfdfc.png"
         alt="profile Image"
       />
       <p className="description">

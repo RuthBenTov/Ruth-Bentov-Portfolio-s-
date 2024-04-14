@@ -34,7 +34,7 @@
 
       &:hover {
         animation: rotate 0.3s ease;
-        // background-color: $lightGray1;
+        cursor: pointer;
       }
       &:active {
         animation: rotate 0.3s ease;

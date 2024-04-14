@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "../src/assets/colors.scss";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
@@ -8,9 +9,10 @@ import MySkills from "./pages/MySkills/MySkills";
 import Projects from "./pages/Projects/Projects";
 
 function App() {
+
   return (
     <>
-      <Layout>
+      <Layout >
         <HomePage />
         <About />
         <MySkills />

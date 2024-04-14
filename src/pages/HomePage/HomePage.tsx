@@ -10,7 +10,7 @@ const HomePage = () => {
     });
   }, []);
   return (
-    <div id="homePageId" className="homePage">
+    <div id="homePageId" className="homePage page">
       <img className="bgImg" src="/images/forest-7774205_640.jpg" alt="" />
       <div className="bgDiv"></div>
       <div>
@@ -38,14 +38,18 @@ const HomePage = () => {
         </button>
       </div>
       <div className="goDownDiv">
-        <img onClick={() => {
-          const targetElement = document.getElementById("aboutPageId");
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth", block: "start" })
-          }
-        }}
+        <img
+          onClick={() => {
+            const targetElement = document.getElementById("aboutPageId");
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          }}
           className="goDown"
-          src="./../../../public/images/Ellipsis@1.25x-10.0s-200px-200px.gif"
+          src="/images/Ellipsis@1.25x-10.0s-200px-200px.gif"
           alt=""
         />
       </div>

@@ -13,7 +13,7 @@ const MySkills = () => {
     });
   }, []);
   return (
-    <div id="skillsPageId" className="mySkillsComp">
+    <div id="skillsPageId" className="mySkillsComp page">
       <div className="skillsContent">
         <h1 className="header">My Skills</h1>
         <p className="description">
