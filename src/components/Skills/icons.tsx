@@ -1,19 +1,12 @@
-import React from "react";
-import { FaSass } from "react-icons/fa6";
-import { IoLogoHtml5 } from "react-icons/io";
-import { FaCss3Alt } from "react-icons/fa6";
-import { IoLogoReact } from "react-icons/io5";
-import { TbBrandReactNative } from "react-icons/tb";
-import { SiMui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
-import { FaFigma } from "react-icons/fa6";
+import { FaCss3Alt, FaSass } from "react-icons/fa6";
+import { IoLogoHtml5 } from "react-icons/io";
+import { IoLogoJavascript, IoLogoReact } from "react-icons/io5";
+import { SiMui, SiTypescript } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
-import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { SiMysql } from "react-icons/si";
+import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 
 import { BsSlack } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";

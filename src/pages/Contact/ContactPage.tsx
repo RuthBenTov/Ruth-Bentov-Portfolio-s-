@@ -1,5 +1,4 @@
 import { IoIosArrowRoundUp } from "react-icons/io";
-import React from "react";
 import "./ContactStyle.scss";
 const ContactPage = () => {
   const scrollToHomePage = () => {

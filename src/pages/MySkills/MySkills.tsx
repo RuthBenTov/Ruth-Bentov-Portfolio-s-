@@ -1,9 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import SkillsContent from "../../components/Skills/SkillsContent";
-import { frontendSkillsIcons } from "../../components/Skills/icons";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import "./mySkillsStyle.scss";
 const MySkills = () => {

@@ -1,10 +1,9 @@
-import "./homepageStyle.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import "./homepageStyle.scss";
 
 const HomePage = () => {
-  const homePageRef = useRef(null);
   useEffect(() => {
     AOS.init({
       duration: 1000,

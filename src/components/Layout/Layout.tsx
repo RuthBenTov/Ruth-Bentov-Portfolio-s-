@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
-import "./layoutStyle.scss";
 import Navbar from "../Navbar/Navbar";
 import MediaIcons from "./MediaIcons";
+import "./layoutStyle.scss";
 
 type LayoutProps = {
   children: ReactNode;

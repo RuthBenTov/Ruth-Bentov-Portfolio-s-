@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ProjectCard from "../../components/Projects/ProjectCard";
-import "./projectsPageStyle.scss";
 import { projectsList } from "../../components/Projects/projectList";
+import "./projectsPageStyle.scss";
 const Projects = () => {
   const [chosenCategory, setChosenCategory] = useState("all");
   return (

@@ -1,9 +1,8 @@
-import React, { FC, useEffect } from "react";
+import { FC, useEffect } from "react";
 import "./projectCardStyle.scss";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { projectsList } from "./projectList";
 interface ProjectCardProps {
   project: Project;
 }

@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { IoLogoLinkedin } from "react-icons/io5";
-import { FaSquareGithub } from "react-icons/fa6";
+import { useEffect } from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { IoLogoLinkedin } from "react-icons/io5";
 import { SiDiscord } from "react-icons/si";
 
 import AOS from "aos";

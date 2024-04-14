@@ -1,5 +1,5 @@
+import "../src/assets/colors.scss";
 import "./App.css";
-import "../../RuthBentov2024/src/assets/colors.scss"
 import Layout from "./components/Layout/Layout";
 import About from "./pages/About/About";
 import ContactPage from "./pages/Contact/ContactPage";
@@ -15,7 +15,7 @@ function App() {
         <About />
         <MySkills />
         <Projects />
-        <ContactPage/>
+        <ContactPage />
       </Layout>
     </>
   );
