@@ -9,6 +9,16 @@ const HomePage = () => {
       duration: 1000,
     });
   }, []);
+  const goToIdElement = (idElem: string) => {
+    const targetElement = document.getElementById(idElem);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div id="homePageId" className="homePage page">
       <img className="bgImg" src="/images/forest-7774205_640.jpg" alt="" />
@@ -30,24 +40,24 @@ const HomePage = () => {
           through learning and diligence.
         </p>
 
-        <button data-aos="fade-down" className="hireMeBtn">
+        <button
+          data-aos="fade-down"
+          onClick={() => goToIdElement("contactPageId")}
+          className="hireMeBtn"
+        >
           Hire Me
         </button>
-        <button data-aos="fade-down" className="projectsBtn">
+        <button
+          data-aos="fade-down"
+          onClick={() => goToIdElement("projectsPageId")}
+          className="projectsBtn"
+        >
           Projects
         </button>
       </div>
       <div className="goDownDiv">
         <img
-          onClick={() => {
-            const targetElement = document.getElementById("aboutPageId");
-            if (targetElement) {
-              targetElement.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-            }
-          }}
+          onClick={() => goToIdElement("aboutPageId")}
           className="goDown"
           src="/images/Ellipsis@1.25x-10.0s-200px-200px.gif"
           alt=""

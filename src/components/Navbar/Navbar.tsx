@@ -2,6 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import "./navbarStyle.scss";
+import DarkMoodBtn from "../Layout/DarkMoodBtn";
 
 const Navbar = () => {
   useEffect(() => {

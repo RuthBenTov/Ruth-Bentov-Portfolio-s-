@@ -2,29 +2,31 @@
 .projectCard {
   width: 300px;
   max-width: 30%;
-  
   border: $lightGray3;
   border-radius: 20px;
   background-color: $whiteClassic;
-
+position: relative;
   img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 180px;
+    height: 11rem;
     object-fit: cover;
   }
   .cardContent {
     padding: 20px;
+    height: 13rem;
     .description {
       font-size: .8rem;
+      height: 6rem;
+      overflow-y: scroll;
     }
     .tags {
       color: $blue;
       font-size: .85rem;
     }
     .btns {
-      position: relative;
-      bottom: 0px;
+      position: absolute;
+      bottom: 0;
       margin: 10px 0;
       .viewDemo {
         background-color: $red;
@@ -48,4 +50,25 @@
       }
     }
   }
+  
+::-webkit-scrollbar {
+    width: 5px; // רוחב הגלילה
+}
+
+/* סגנון לכיתת האלמנט האופקי של הגלילה */
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; // רקע כללי
+}
+
+/* סגנון לאלמנט הגלילה עצמו */
+::-webkit-scrollbar-thumb {
+    background-color: #666; // רקע של קו הגלילה
+    border-radius: 5px; // פינות מעגלות
+}
+
+/* הסתרת חיצים בגלילה */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
 }
