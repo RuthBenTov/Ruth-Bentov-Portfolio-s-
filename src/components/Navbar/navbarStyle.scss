@@ -30,9 +30,9 @@
       font-family: "Inter", sans-serif;
       font-weight: 300;
       padding-right: 0px;
+      transition:all .3s ease;
       &:hover {
-        animation: moveRight 0.2s ease;
-        padding-right: 30px;
+        font-weight: 400;
         cursor: pointer;
       }
     }
