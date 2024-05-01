@@ -11,9 +11,6 @@ import MobileScreen from "./components/Layout/MobileScreen";
 
 function App() {
   const [mobileScreen, setMobileScreen] = useState(false);
-  const switchForLaptop = () => {
-    setMobileScreen(false);
-  }
   useEffect(() => {
     if (window.innerWidth <= 900)
       setMobileScreen(true);
@@ -29,7 +26,7 @@ function App() {
         <Projects />
         <ContactPage />
       </Layout> :
-      <MobileScreen switchForLaptop={switchForLaptop}/>
+      <MobileScreen switchForLaptop={setMobileScreen}/>
       }
      
     </>

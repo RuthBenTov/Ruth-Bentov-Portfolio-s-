@@ -15,12 +15,14 @@ const Navbar = () => {
     const targetElement = document.getElementById(idElem);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      setCurrentPage(idElem);
+      // setCurrentPage(idElem);
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
+      setTimeout(() => {}, 200);
+
       const stopScrollObjects = document.getElementsByClassName("page");
       const scrollPosition = window.scrollY;
 

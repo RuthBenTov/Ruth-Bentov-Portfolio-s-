@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 interface mobileScreenProps {
-  switchForLaptop: () => void;
+  switchForLaptop: (bool:boolean) => void;
 }
 const MobileScreen: FC<mobileScreenProps> = ({ switchForLaptop }) => {
   return (
@@ -10,7 +10,7 @@ const MobileScreen: FC<mobileScreenProps> = ({ switchForLaptop }) => {
       <p>Want to watch anyway?</p>
       <button
         onClick={() => {
-          switchForLaptop();
+          switchForLaptop(false);
         }}
       >
         Yes

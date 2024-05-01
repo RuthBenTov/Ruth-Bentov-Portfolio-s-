@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import { projectsList } from "../../components/Projects/projectList";
 import "./projectsPageStyle.scss";
 const Projects = () => {
   const [chosenCategory, setChosenCategory] = useState("all");
+  const [projectToVisible, setProjectToVisible] = useState(projectsList);
+
+  useEffect(() => {
+    if (chosenCategory != "all") {
+      const filteredProjects = projectsList.filter((p) =>
+        p.tags.some((tag) => tag.toLowerCase() === chosenCategory.toLowerCase())
+      );
+      setProjectToVisible(filteredProjects);
+    } else setProjectToVisible(projectsList);
+  }, [chosenCategory]);
   return (
     <div id="projectsPageId" className="projectsPage page">
       <h1 className="header">Projects</h1>
@@ -44,15 +54,15 @@ const Projects = () => {
         </div>
         <div
           onClick={() => {
-            setChosenCategory("apps");
+            setChosenCategory("games");
           }}
-          className={`category ${chosenCategory === "apps" && "isActive"}`}
+          className={`category ${chosenCategory === "games" && "isActive"}`}
         >
-          Apps
+          Games
         </div>
       </div>
       <div className="projectsCards">
-        {projectsList.map((project, index) => (
+        {projectToVisible.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
       </div>
