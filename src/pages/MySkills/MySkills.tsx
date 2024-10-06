@@ -17,11 +17,10 @@ const MySkills = () => {
       <div className="skillsContent">
         <h1 className="header">My Skills</h1>
         <p className="description">
-          I"m all about websites and apps in end to end (front and back),
-          focusing on both functionality and aesthetics . My forte lies in
-          solving logic-based and computational challenges, leveraging my swift
-          learning and quick thinking to explore new libraries and concepts for
-          efficient problem-solving.
+          I am a developer who believes in the importance of continuous improvement.
+          In addition to honing my coding skills, I actively explore related
+          fields such as testing and UX/UI design. This helps me create more
+          comprehensive and user-focused applications.
         </p>
         <div className="skillsBody">
           <div className="skillsLabels">

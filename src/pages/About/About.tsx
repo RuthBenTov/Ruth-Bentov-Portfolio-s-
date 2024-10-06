@@ -20,14 +20,8 @@ const About = () => {
         alt="profile Image"
       />
       <p className="description">
-        Hey! my name is Ruth and I'm a web and app developer with a passion for
-        Insert complex logic into the code. Im currently study
-        <span className="redBold"> computer science </span> at the Open
-        University as a hobby, and work at
-        <span className="redBold"> Weby</span> as Full Stack developer. I aspire
-        to a career that will allow me to channel my thinking ability through
-        the creation of beautiful software and fascinating experiences. when Im
-        not on the computer I enjoy to ride a bike and refurbish furniture.
+        Hey! My name is Ruth, and I'm a web and app developer with a passion for integrating complex logic into code.<br/> I currently work at <span className="redBold">UNA</span>, a startup focused on developing an AI-based dating application. Previously, I worked at <span className="redBold">WEBY</span>, a software house specializing in tailored projects for various clients, where I served as a Full Stack developer. I aspire to a career that allows me to channel my thinking ability through the creation of beautiful software and fascinating experiences. When I'm not on the computer,
+         I enjoy riding my bike and traveling.
       </p>
     </div>
   );

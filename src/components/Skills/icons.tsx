@@ -46,20 +46,23 @@ export const backendSkillsIcons = [
   <FaNodeJs />,
   <SiMongodb />,
   <SiMysql />,
+  <FaPython/>,
 ];
 export const backendSkills = [
   "Express",
-  "nodeJS",
+  "NodeJS",
   "JSON",
   "REST API",
   "Mongodb",
   "MySql",
+  "SQL Alchemy",
   "Cloudinary",
   "Firebase",
+  "Python",
 ];
 
 export const devSkillsIcons = [<BsSlack />, <FaGithub />, <FaGitAlt />];
-export const devSkills = ["Git", "GitHab", "Slack", "Trello", "OOP"];
+export const devSkills = ["Git", "GitHab", "Slack", "Trello", "OOP", "YouTrack"];
 
 export const languagesSkillsIcons = [<FaJava />, <FaPython />];
 export const languagesSkills = ["Java", "Python"];

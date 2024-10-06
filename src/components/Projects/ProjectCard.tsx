@@ -31,12 +31,14 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
         <div className="btns">
+         {project.demoUrl &&
           <button onClick={()=>openSite(project.demoUrl)} className="viewDemo">
             View Demo
-          </button>
-          <button onClick={()=>openSite(project.gitUrl)} className="viewCode">
+          </button>}
+          {project.gitUrl &&
+           <button onClick={()=>openSite(project.gitUrl)} className="viewCode">
             View Code
-          </button>
+          </button>}
         </div>
       </div>
     </div>

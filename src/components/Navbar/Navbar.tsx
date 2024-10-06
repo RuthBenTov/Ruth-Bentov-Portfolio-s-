@@ -63,7 +63,7 @@ const Navbar = () => {
         <button
           onClick={() => {
             window.location.href =
-              "https://drive.google.com/uc?export=download&id=1nYMn1jIEnaQSirvAIS4etYkqguwS37Bj";
+              "https://drive.google.com/uc?export=download&id=13ywj6oiolWo1lOYst6qBFZ0TtBidQ2zu";
           }}
           className="downloadBtn"
         >
