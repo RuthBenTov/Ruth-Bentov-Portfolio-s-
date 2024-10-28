@@ -11,6 +11,7 @@ import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { BsSlack } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa6";
+import { FaDocker } from "react-icons/fa";
 
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa6";
@@ -61,8 +62,8 @@ export const backendSkills = [
   "Python",
 ];
 
-export const devSkillsIcons = [<BsSlack />, <FaGithub />, <FaGitAlt />];
-export const devSkills = ["Git", "GitHab", "Slack", "Trello", "OOP", "YouTrack"];
+export const devSkillsIcons = [<BsSlack />, <FaGithub />, <FaGitAlt />, <FaDocker/>];
+export const devSkills = ["Git", "GitHab", "Slack", "Trello", "OOP", "YouTrack", "Docker"];
 
 export const languagesSkillsIcons = [<FaJava />, <FaPython />];
 export const languagesSkills = ["Java", "Python"];
