@@ -5,8 +5,8 @@ export const projectsList = [
     description:
       "Admin app web for dating app, manage users, chats, packages. Developed for a confidential startup. Full details available in a one-on-one conversation.",
     tags: ["Java Script", "React", "SQL", "Python","Front&back"],
-    demoUrl: "",
-    gitUrl: "",
+    demoUrl: "https://getuna.ai/",
+    gitUrl: "", 
   },
   {
     ImageUrl: "/images/sips_project.png",
